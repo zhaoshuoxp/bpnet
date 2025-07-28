@@ -1,3 +1,8 @@
+## This is a modified version of original BPnet.
+
+bpnet-gpu version uses tensorflow v1, cuDNN v7, and CUDA v8, which is not compatiable with NVIDIA L4 and 5XX drivers, use CPU version only.
+
+
 # BPNet
 [![CircleCI](https://circleci.com/gh/kundajelab/bpnet.svg?style=svg&circle-token=f55c1cf580b05df76e260993f7645e35d5302e76)](https://circleci.com/gh/kundajelab/bpnet)
 
