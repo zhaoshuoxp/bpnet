@@ -22,7 +22,8 @@ dependencies:
 - pandas>=0.23.0
 - fastparquet
 - python-snappy
-
+- cudatoolkit=10.0 
+- cudnn=7.6 
 - nb_conda=2.2.1
 - pip
 - pip:
@@ -40,9 +41,11 @@ dependencies:
   - notebook==6.0.3
   - papermill==2.1.1
   - nbclient==0.4.0
-
+  - wandb==0.12.21
+  - pyrle==0.0.37
+  - pyranges==0.0.120
   # ML & numerics
-  - tensorflow-gpu==1.7 #for gpu
-
+  - tensorflow-gpu==1.15.5 #for gpu
+  - scikit-learn==0.21.3
   # bpnet package
   - .[dev,extras]  # install the local basepair package. All the other required pip packages are specified in the setup.py

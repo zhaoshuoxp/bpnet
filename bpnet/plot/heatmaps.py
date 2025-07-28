@@ -3,7 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from mpl_toolkits.axes_grid1.axes_divider import make_axes_locatable
-from mpl_toolkits.axes_grid1.colorbar import colorbar
+try:
+    from matplotlib.colorbar import Colorbar
+except ImportError:
+    from mpl_toolkits.axes_grid1.colorbar import colorbar as Colorbar
 from matplotlib import colors
 from bpnet.plot.utils import MidpointNormalize
 

@@ -38,6 +38,9 @@ dependencies:
   - kipoiseq==0.3.4
   - kipoi==0.6.25
   - joblib==0.15.1
-
+  - wandb==0.12.21
+  - requests<2.26
+  - urllib3<1.27
+  - chardet<5
   # bpnet package
   - .[dev,extras]  # install the local basepair package. All the other required pip packages are specified in the setup.py
